@@ -1,0 +1,26 @@
+### Create a new user
+POST http://localhost:3000/auth/signup
+content-type: application/json
+
+{
+  "email": "bloayza3@mushroomsoft.com",
+  "password": "admin123",
+  "isAdmin": true
+}
+
+### Find a particular user with a Given ID.
+GET http://localhost:3000/auth/2
+
+### Find all users with a given email.
+GET http://localhost:3000/auth?email=bloayza2@mushroomsoft.com
+
+### Delete a user with a Given id.
+DELETE http://localhost:3000/auth/1
+
+### Update a user
+PATCH http://localhost:3000/auth/2
+content-type: application/json
+
+{
+  "password": "poker12324"
+}
